@@ -8,6 +8,7 @@ public class TodoItem implements Serializable {
 	private String text;
 	private boolean finished;
 	private String createdAt;
+	private String id;
 	
 	@Override
 	public String toString() {
@@ -45,6 +46,14 @@ public class TodoItem implements Serializable {
 
 	public void setCreatedAt(String createdAt) {
 		this.createdAt = createdAt;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 	
 }

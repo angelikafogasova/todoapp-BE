@@ -12,6 +12,7 @@ public class TodoItemConverter {
 		output.setText(input.getText());
 		output.setTitle(input.getTitle());
 		output.setIdentifier(identifier);
+		
 
 		return output;
 	}
@@ -24,6 +25,8 @@ public class TodoItemConverter {
 		output.setText(input.getText());
 		output.setTitle(input.getTitle());
 
+		output.setId(input.getIdentifier());
+		
 		return output;
 	}
 }
