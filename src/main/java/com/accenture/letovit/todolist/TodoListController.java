@@ -38,7 +38,7 @@ public class TodoListController {
 		
 		LocalDateTime now = LocalDateTime.now();
 		
-		String prettyDateTime = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM).format(now);
+		String prettyDateTime = DateTimeFormatter.ISO_DATE_TIME.format(now);
 		
 		request.setCreatedAt(prettyDateTime);
 		
