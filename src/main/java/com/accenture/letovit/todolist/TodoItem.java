@@ -9,6 +9,7 @@ public class TodoItem implements Serializable {
 	private boolean finished;
 	private String createdAt;
 	private String id;
+	private String importance;
 	
 	@Override
 	public String toString() {
@@ -55,5 +56,15 @@ public class TodoItem implements Serializable {
 	public void setId(String id) {
 		this.id = id;
 	}
+
+	public String getImportance() {
+		return importance;
+	}
+
+	public void setImportance(String importance) {
+		this.importance = importance;
+	}
+	
+	
 	
 }

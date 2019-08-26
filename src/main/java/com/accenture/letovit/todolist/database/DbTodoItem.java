@@ -12,6 +12,7 @@ public class DbTodoItem {
 	private String text;
 	private boolean finished;
 	private String createdAt;
+	private String importance;
 	
 	public String getIdentifier() {
 		return identifier;
@@ -43,5 +44,13 @@ public class DbTodoItem {
 	public void setCreatedAt(String createdAt) {
 		this.createdAt = createdAt;
 	}
+	public String getImportance() {
+		return importance;
+	}
+	public void setImportance(String importance) {
+		this.importance = importance;
+	}
+	
+	
 
 }
